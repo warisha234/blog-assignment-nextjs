@@ -18,7 +18,7 @@ export default function Blogs() {
                 </div>
                 <h1 className="title">Tom & Jerry</h1>
                 <p className="description">
-                   "Tom and Jerry" is one of the most iconic animated television series in history.  
+                   Tom and Jerry is one of the most iconic animated television series in history.  
                 </p>
                 <Link href={"/tom-jerry"}>
                 <button className="readmore">Read More</button>
@@ -31,7 +31,7 @@ export default function Blogs() {
                 </div>
                 <h1 className="title">Doraemon</h1>
                 <p className="description">
-                  "Doraemon" is a popular Japanese animated series created by Fujiko F. Fujio, first aired in 1973.
+                  Doraemon is a popular Japanese animated series created by Fujiko F. Fujio, first aired in 1973.
                 </p>
                 <Link href={"/doraemon"}>
                 <button className="readmore">Read More</button>
@@ -45,7 +45,7 @@ export default function Blogs() {
 
                 <h1 className="title">Pookemon</h1>
                 <p className="description">
-                  "Pokémon" is a widely popular franchise created by Satoshi Tajiri and Ken Sugimori, first launched in 1996.
+                  Pokemon is a widely popular franchise created by Satoshi Tajiri and Ken Sugimori, first launched in 1996.
                 </p>
                  <Link href={"/pookemon"}>
                 <button className="readmore">Read More</button>
@@ -59,7 +59,7 @@ export default function Blogs() {
 
                 <h1 className="title">Frozen</h1>
                 <p className="description">
-                "Frozen" is a highly acclaimed animated film produced by Walt Disney Animation Studios, released in 2013.
+                Frozen is a highly acclaimed animated film produced by Walt Disney Animation Studios, released in 2013.
                 </p>
                 <Link href={"/frozen"}>
                 <button className="readmore">Read More</button>
@@ -73,7 +73,7 @@ export default function Blogs() {
 
                 <h1 className="title">Miraculous</h1>
                 <p className="description">
-                  "Miraculous: Tales of Ladybug & Cat Noir" is a French animated television series created by Thomas Astruc, first premiered in 2015. 
+                  Miraculous Tales of Ladybug & Cat Noir is a French animated television series created by Thomas Astruc, first premiered in 2015. 
                 </p>
                 <Link href={"/miraculous"}>
                 <button className="readmore">Read More</button>
@@ -87,7 +87,7 @@ export default function Blogs() {
 
                 <h1 className="title">Shinchaan</h1>
                 <p className="description">
-                "Shinchan," also known as "Crayon Shin-chan," is a Japanese animated television series created by Yoshito Usui, first aired in 1992. 
+                Shinchan also known as Crayon Shin-chan is a Japanese animated television series created by Yoshito Usui, first aired in 1992. 
                    </p>
                    <Link href={"/shinchan"}>
                 <button className="readmore">Read More</button>

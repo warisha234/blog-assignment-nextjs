@@ -1,101 +1,99 @@
+import Link from "next/link";
 import Image from "next/image";
+import Tomjerry from "../app/public/tomjrry.jpg"
+import Doraemon from "../app/public/doraemon.jpg"
+import Picachoo from "../app/public/picachoo.jpg"
+import Frozen from "../app/public/frozen.jpg"
+import Miraculous from "../app/public/miraculous.jpg"
+import Shinchan from "../app/public/shinchan.jpg"
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+export default function Blogs() {
+    return (
+        <div>
+            <h1 className="cartoon">Exploring the World of Cartoons</h1>
+            <div className="parentcontainer">
+            <div className="childcontainer">
+                <div className="imagecontainer"> 
+                     <Image src={Tomjerry} alt="Tom and jerry"/>
+                </div>
+                <h1 className="title">Tom & Jerry</h1>
+                <p className="description">
+                   "Tom and Jerry" is one of the most iconic animated television series in history.  
+                </p>
+                <Link href={"/tom-jerry"}>
+                <button className="readmore">Read More</button>
+                </Link>
+            </div>
+            {/* box2 */}
+            <div className="childcontainer">
+                <div className="imagecontainer"> 
+                     <Image src={Doraemon} alt="Doraemon"/>
+                </div>
+                <h1 className="title">Doraemon</h1>
+                <p className="description">
+                  "Doraemon" is a popular Japanese animated series created by Fujiko F. Fujio, first aired in 1973.
+                </p>
+                <Link href={"/doraemon"}>
+                <button className="readmore">Read More</button>
+                </Link>
+            </div>
+            {/* box3 */}
+            <div className="childcontainer">
+                <div className="imagecontainer"> 
+                     <Image src={Picachoo} alt="picachoo"/>
+                </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+                <h1 className="title">Pookemon</h1>
+                <p className="description">
+                  "Pokémon" is a widely popular franchise created by Satoshi Tajiri and Ken Sugimori, first launched in 1996.
+                </p>
+                 <Link href={"/pookemon"}>
+                <button className="readmore">Read More</button>
+                </Link>
+            </div>
+            {/* box4 */}
+            <div className="childcontainer">
+                <div className="imagecontainer"> 
+                     <Image src={Frozen} alt="Frozen"/>
+                </div>
+
+                <h1 className="title">Frozen</h1>
+                <p className="description">
+                "Frozen" is a highly acclaimed animated film produced by Walt Disney Animation Studios, released in 2013.
+                </p>
+                <Link href={"/frozen"}>
+                <button className="readmore">Read More</button>
+                </Link>
+            </div>
+            {/* box5 */}
+            <div className="childcontainer">
+                <div className="imagecontainer"> 
+                     <Image src={Miraculous} alt="Miraculous"/>
+                </div>
+
+                <h1 className="title">Miraculous</h1>
+                <p className="description">
+                  "Miraculous: Tales of Ladybug & Cat Noir" is a French animated television series created by Thomas Astruc, first premiered in 2015. 
+                </p>
+                <Link href={"/miraculous"}>
+                <button className="readmore">Read More</button>
+                </Link>
+            </div>
+            {/* box 6 */}
+            <div className="childcontainer">
+                <div className="imagecontainer"> 
+                     <Image src={Shinchan} alt="Pookemon"/>
+                </div>
+
+                <h1 className="title">Shinchaan</h1>
+                <p className="description">
+                "Shinchan," also known as "Crayon Shin-chan," is a Japanese animated television series created by Yoshito Usui, first aired in 1992. 
+                   </p>
+                   <Link href={"/shinchan"}>
+                <button className="readmore">Read More</button>
+                </Link>
+            </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+        </div>
+    )
 }
